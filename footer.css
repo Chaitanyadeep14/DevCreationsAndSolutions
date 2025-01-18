@@ -1,0 +1,415 @@
+/* General Footer Styles */
+.footer {
+    font-family: 'Arial', sans-serif;
+    background-color: #424242; /* Dark gray background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Brand Section */
+.brand-section {
+    flex: 1;
+    text-align: center;
+}
+
+.flogo {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.brand-section p {
+    font-size: 1.2rem;
+    color: #ff8b00; /* Highlight color */
+    margin: 0;
+}
+
+/* Subscription Section */
+.subscription-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subscription-section .enquiry-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 300px;
+    font-size: 1rem;
+}
+
+.submit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.submit-row button {
+    padding: 10px 20px;
+    background-color: #ff8b00; /* Highlight color */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-row button:hover {
+    background-color: #e67a00;
+    box-shadow: 0px 5px 15px rgba(255, 123, 0, 0.4);
+}
+
+.submit-row .response-text {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-left: 10px;
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+/* Menu Section */
+.menu-section {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.menu-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #ff8b00; /* Highlight color */
+}
+
+.menu-column a {
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px; /* Increased gap between links */
+}
+
+.menu-column a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons Section */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: none; /* Restores the original colors */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Copyright Section */
+.footer-copyright {
+    background-color: #424242; /* Slightly darker shade for separation */
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 0.9rem;
+    color: #ffffff; /* White text */
+    margin-top: 30px;
+    border-top: 1px solid #555555; /* Subtle border for separation */
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+/* Media Queries for Footer */
+
+
+    
+    
+/* General Footer Styles */
+.footer {
+    font-family: 'Arial', sans-serif;
+    background-color: #424242; /* Dark gray background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Brand Section */
+.brand-section {
+    flex: 1;
+    text-align: center;
+}
+
+.flogo {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.brand-section p {
+    font-size: 1.2rem;
+    color: #ff8b00; /* Highlight color */
+    margin: 0;
+}
+
+/* Subscription Section */
+.subscription-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subscription-section .enquiry-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 300px;
+    font-size: 1rem;
+}
+
+.submit-row button {
+    padding: 10px 20px;
+    background-color: #ff8b00; /* Highlight color */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-row button:hover {
+    background-color: #e67a00;
+    box-shadow: 0px 5px 15px rgba(255, 123, 0, 0.4);
+}
+
+/* Menu Section */
+.menu-section {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.menu-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #ff8b00; /* Highlight color */
+}
+
+.menu-column a {
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px; /* Increased gap between links */
+}
+
+.menu-column a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: none;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+#ccc{
+    margin-left: 35px;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    border-top: 1px solid #555555; /* Subtle border for separation */
+}
+
+/* Media Queries */
+
+/* Phones (max-width: 576px) */
+@media (max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brand-section, .menu-section {
+        width: 100%;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .menu-column {
+        margin-bottom: 20px;
+    }
+
+    .menu-column h4 {
+        font-size: 1rem;
+    }
+
+    .menu-column a {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    .menu-column p {
+        font-size: 1rem;
+        word-wrap: break-word;
+        margin: 10px 0;
+    }
+
+    .social-icons img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .menu-column {
+        text-align: center;
+    }
+
+    .menu-column h4 {
+        font-size: 1.1rem;
+    }
+
+    .menu-column a {
+        font-size: 0.9rem;
+    }
+
+    .subscription-form input[type="email"] {
+        width: 80%;
+    }
+}
+
+/* Small Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .menu-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .menu-column {
+        width: 45%;
+    }
+
+    .brand-section {
+        text-align: left;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Widescreens (min-width: 1201px) */
+@media (min-width: 1201px) {
+    .footer-container {
+        justify-content: space-between;
+    }
+
+    .menu-section {
+        gap: 50px;
+    }
+
+    .menu-column {
+        width: 22%;
+    }
+
+    .subscription-form input[type="email"] {
+        width: 300px;
+    }
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Dev Creations and Solutions</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="product.css">
+
+    <script src="script.js"></script>
+    <script src="productScript.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-jLKHWMZoON/xLK+0ToVfxfJFrsMTELzZPzey5He18u3gfKmkeHsR/8VsYuK7EWiP" crossorigin="anonymous">
+</head>
+<body>
+   <!-- Desktop Navbar -->
+ <nav class="navbar desktop-navbar">
+    <div class="navbar-logo">
+        <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="navbar-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-link dropdown">
+          <span id="productsButton">Products</span>
+          <div class="dropdown-menu" id="productDropdownMenu">
+            <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+            <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+            <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+            <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+            <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+            <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+            <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+            <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+            <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+            <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+            <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+            <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+            
+          </div>
+      </div>
+             
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+    <div class="navbar-icons">
+        <div class="icon">
+            <img src="./images/wishlist-icon.png" alt="Wishlist" title="Wishlist">
+        </div>
+        <div class="icon">
+            <img src="./images/cart-icon.png" alt="Cart" title="Cart">
+        </div>
+        <div class="icon">
+            <img src="./images/user-icon.png" alt="User Profile" title="Profile">
+        </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Mobile Navbar -->
+  <nav class="mobile-navbar">
+  <div class="mobile-navbar-container">
+    <div class="mobile-navbar-logo">
+        <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="mobile-navbar-hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+  </div>
+  <div class="mobile-navbar-links" id="mobile-navbar-links">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <div class="mobile-nav-link dropdown">
+        <span>Products</span>
+        <div class="mobile-dropdown-menu">
+            <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+            <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+            <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+            <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+            <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+            <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+            <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+            <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+            <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+            <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+            <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+            <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+            
+  
+        </div>
+    </div>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+  </div>
+  </nav>
+  
+
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <div class="overlay">
+            <h1>Gallery</h1>
+            <p><a href="index.html">Home</a> » Gallery</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Our Moments</h2>
+        <p>Explore photos of our team, events, and memorable milestones!</p>
+        <div class="gallery-grid">
+            <!-- Team Photos -->
+            <div class="gallery-item">
+                <img src="./gallery/1.png" alt="Team Photo">
+                <!-- <div class="gallery-overlay">
+                    <h3>Team Photo</h3>
+                    <p>Our amazing team at the annual meet.</p>
+                </div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/2.png" alt="Team Photo">
+                <!-- <div class="gallery-overlay">
+                    <h3>Team Outing</h3>
+                    <p>Fun moments from our team outing.</p>
+                </div> -->
+            </div>
+
+            <!-- Office Photos -->
+            <div class="gallery-item">
+                <img src="./gallery/3.jpg" alt="Office Space">
+                <!-- <div class="gallery-overlay">
+                    <h3>Our Workspace</h3>
+                    <p>A glimpse into our creative workspace.</p>
+                </div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/4.jpg" alt="Office Interior">
+                <!-- <div class="gallery-overlay">
+                    <h3>Modern Design</h3>
+                    <p>Comfortable and inspiring office interior.</p>
+                </div> -->
+            </div>
+
+            <!-- Event Photos -->
+            <div class="gallery-item">
+                <img src="./gallery/5.jpg" alt="Event Attended">
+                <!-- <div class="gallery-overlay">
+                    <h3>Conference Event</h3>
+                    <p>Representing our company at a tech conference.</p>
+                </div> -->
+            </div>
+            <div class="gallery-item">
+                <img src="./gallery/6.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./gallery/7.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./gallery/8.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./gallery/9.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./gallery/10.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./gallery/11.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./gallery/12.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./gallery/13.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+<!-- 
+            <div class="gallery-item">
+                <img src="./gallery/16.jpg" alt="Workshop Conducted">
+                <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div>
+            </div> -->
+
+            <div class="gallery-item">
+                <img src="./gallery/17.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+            <div class="gallery-item">
+                <img src="./images/18.jpg" alt="Workshop Conducted">
+                <!-- <div class="gallery-overlay">
+                    <h3>Workshop</h3>
+                    <p>Conducting a hands-on workshop for aspiring designers.</p>
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Icon -->
+     <a href="https://wa.me/+919945250080" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+  
+    <div id="footer"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const mobileLinks = document.getElementById("mobile-navbar-links");
+    
+        hamburger.addEventListener("click", () => {
+            const isVisible = mobileLinks.style.display === "flex";
+            mobileLinks.style.display = isVisible ? "none" : "flex";
+        });
+    });
+    </script>
+</body>
+</html>

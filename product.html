@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Products</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="productScript.js" defer></script>
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+ <!-- Desktop Navbar -->
+ <nav class="navbar desktop-navbar">
+  <div class="navbar-logo">
+      <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+  </div>
+  <div class="navbar-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <div class="nav-link dropdown">
+        <span id="productsButton">Products</span>
+        <div class="dropdown-menu" id="productDropdownMenu">
+            <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+            <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+            <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+            <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+            <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+            <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+            <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+            <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+            <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+            <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+            <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+            <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+        </div>
+    </div>
+           
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+  </div>
+  <div class="navbar-icons">
+      <div class="icon">
+          <img src="./images/wishlist-icon.png" alt="Wishlist" title="Wishlist">
+      </div>
+      <div class="icon">
+          <img src="./images/cart-icon.png" alt="Cart" title="Cart">
+      </div>
+      <div class="icon">
+          <img src="./images/user-icon.png" alt="User Profile" title="Profile">
+      </div>
+  </div>
+</nav>
+
+
+<!-- Mobile Navbar -->
+<nav class="mobile-navbar">
+<div class="mobile-navbar-container">
+  <div class="mobile-navbar-logo">
+      <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+  </div>
+  <div class="mobile-navbar-hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+</div>
+<div class="mobile-navbar-links" id="mobile-navbar-links">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="services.html" class="mobile-nav-link">Services</a>
+  <div class="mobile-nav-link dropdown">
+      <span>Products</span>
+      <div class="mobile-dropdown-menu">
+        <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+        <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+        <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+        <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+        <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+        <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+        <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+        <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+        <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+        <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+        <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+        <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+
+      </div>
+  </div>
+  <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+</div>
+</nav>
+  <!-- Product Section -->
+  <div class="product-container">
+    <div class="product-images">
+        <img id="mainImage" src="./images/t-shirts/full-view.png" alt="Full View" class="main-image">
+        <div class="thumbnails" id="thumbnailContainer">
+          <img src="./images/t-shirts/front-view.png" alt="Front View">
+          <img src="./images/t-shirts/back-view.png" alt="Back View">
+          <img src="./images/t-shirts/blueprint.png" alt="Blueprint">
+        </div>
+      </div>
+      
+    <div class="product-details">
+        <h1 id="productTitle">Dev Customizable White Round T-Shirt</h1>
+        <p class="fabric" id="productFabric">Fabric: Cotton</p>
+        <p class="description" id="productDescription">
+          Experience comfort and style with our premium round neck t-shirt. Made from high-quality, breathable fabric, it's perfect for everyday wear. With a sleek design and versatile fit, this t-shirt is a wardrobe essential for casual outings or layering up.
+        </p>
+        <ul class="product-features" id="productFeatures">
+          <li>Min Order: 50 pieces</li>
+          <li>Sizes: S, M, L, XL, XXL</li>
+          <li>Material: 100% Cotton</li>
+          <li>Delivery: 3 Business Days</li>
+        </ul>
+        <div class="customize-btn-container">
+            <a id="customizeBtn" href="https://forms.gle/t-shirts-form-link" target="_blank" class="customize-btn">Customize Now</a>
+        </div>
+        <p class="sales-info">Over 578 bundles sold so far</p>
+        <div class="assurance">
+          <div>
+            <img src="./images/delivery-icon.png" alt="Assured Delivery">
+            <p>Assured Delivery within specified date</p>
+          </div>
+          <div>
+            <img src="./images/money-back-icon.png" alt="Money Back Guarantee">
+            <p>Money back guarantee</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- WhatsApp Floating Icon -->
+  <a href="https://wa.me/+919945250080" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+      </a>
+
+    <div id="footer"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const productKey = urlParams.get("product");
+
+        if (productKey && products[productKey]) {
+            updateProduct(productKey);
+        } else {
+            // Fallback if the product key is invalid or missing
+            document.querySelector(".product-container").innerHTML =
+                "<h1>Product not found</h1><p>Please select a valid product from the list.</p>";
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const mobileLinks = document.getElementById("mobile-navbar-links");
+      const productDropdown = document.querySelector(".mobile-nav-link.dropdown");
+      const productDropdownMenu = document.querySelector(".mobile-dropdown-menu");
+      const dropdownItems = document.querySelectorAll(".dropdown-item");
+    
+      // Toggle mobile navbar
+      hamburger.addEventListener("click", () => {
+        const isVisible = mobileLinks.style.display === "flex";
+        mobileLinks.style.display = isVisible ? "none" : "flex";
+      });
+    
+      // Toggle dropdown menu for Products
+      productDropdown.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent default behavior
+        const isDropdownVisible = productDropdownMenu.style.display === "block";
+        productDropdownMenu.style.display = isDropdownVisible ? "none" : "block";
+      });
+    
+      // Close the dropdown and hamburger menu when a dropdown item is clicked
+      dropdownItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          productDropdownMenu.style.display = "none"; // Hide dropdown
+          mobileLinks.style.display = "none"; // Close hamburger menu
+        });
+      });
+    });
+    
+  
+</script>
+  
+    
+</body>
+</html>

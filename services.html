@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Services</title>
+        <link rel="stylesheet" href="services.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="product.css">
+
+        <!-- Font Awesome Import -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-jLKHWMZoON/xLK+0ToVfxfJFrsMTELzZPzey5He18u3gfKmkeHsR/8VsYuK7EWiP" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/0cf1d6798b.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="productScript.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <!-- Desktop Navbar -->
+ <nav class="navbar desktop-navbar">
+    <div class="navbar-logo">
+        <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="navbar-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-link dropdown">
+          <span id="productsButton">Products</span>
+          <div class="dropdown-menu" id="productDropdownMenu">
+            <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+            <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+            <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+            <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+            <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+            <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+            <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+            <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+            <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+            <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+            <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+            <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+            
+          </div>
+      </div>
+             
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+    <div class="navbar-icons">
+        <div class="icon">
+            <img src="./images/wishlist-icon.png" alt="Wishlist" title="Wishlist">
+        </div>
+        <div class="icon">
+            <img src="./images/cart-icon.png" alt="Cart" title="Cart">
+        </div>
+        <div class="icon">
+            <img src="./images/user-icon.png" alt="User Profile" title="Profile">
+        </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Mobile Navbar -->
+  <nav class="mobile-navbar">
+  <div class="mobile-navbar-container">
+    <div class="mobile-navbar-logo">
+        <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="mobile-navbar-hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+  </div>
+  <div class="mobile-navbar-links" id="mobile-navbar-links">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <div class="mobile-nav-link dropdown">
+        <span>Products</span>
+        <div class="mobile-dropdown-menu">
+            <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+            <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+            <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+            <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+            <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+            <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+            <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+            <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+            <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+            <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+            <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+            <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+            
+        </div>
+    </div>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+  </div>
+  </nav>
+        <!-- Hero Banner Container -->
+        <section class="hero-banner">
+            <div class="overlay">
+                <h1>Services</h1>
+                <p><a href="index.html">Home</a> » Services</p>
+            </div>
+        </section>
+        <div class="services">
+            <div class="container">
+                <div class="row">
+                    <!-- Card 1: Custom Design Solutions -->
+                    <div class="service-box">
+                        <div class="icon-container">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>Custom Design Solutions</h4>
+                        <p>
+                            Tailored design services that capture your brand’s essence, from promotional posters to digital media assets.
+                        </p>
+                        <a href="https://forms.gle/sfXg8doKfnwLQ8Hf8" target="_blank" class="get-started"><span>Get Started</span></a>
+                    </div>
+
+                    <!-- Card 2: Premium Printing Services -->
+                    <div class="service-box">
+                        <div class="icon-container">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h4>Premium Printing Services</h4>
+                        <p>
+                            High-resolution, professional printing for promotional materials like flyers, banners, and brochures.
+                        </p>
+                        <a href="https://forms.gle/sfXg8doKfnwLQ8Hf8" target="_blank" class="get-started"><span>Get Started</span></a>
+                    </div>
+
+                    <!-- Card 3: Merchandise Production -->
+                    <div class="service-box">
+                        <div class="icon-container">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Merchandise Production</h4>
+                        <p>
+                            From branded apparel to customized accessories, we craft high-quality merchandise to meet your specifications.
+                        </p>
+                        <a href="https://forms.gle/sfXg8doKfnwLQ8Hf8" target="_blank" class="get-started"><span>Get Started</span></a>
+                    </div>
+
+                    <!-- Card 4: Annual Festival Posters -->
+                    <div class="service-box">
+                        <div class="icon-container">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Annual Festival Posters</h4>
+                        <p>
+                            We specialize in designing vibrant and engaging posters for annual festivals and events, ensuring they capture the festive spirit and attract attention effectively.
+                        </p>
+                        <a href="https://forms.gle/sfXg8doKfnwLQ8Hf8" target="_blank" class="get-started"><span>Get Started</span></a>
+                    </div>
+
+                    <!-- Card 5: Web & App Development -->
+                    <div class="service-box">
+                        <div class="icon-container">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Web Development & App Development</h4>
+                        <p>
+                            Responsive, user-friendly websites and mobile applications tailored to your business’s unique needs.
+                        </p>
+                        <a href="https://forms.gle/sfXg8doKfnwLQ8Hf8" target="_blank" class="get-started"><span>Get Started</span></a>
+                    </div>
+
+                    <!-- Card 6: Educational Courses -->
+                    <div class="service-box">
+                        <div class="icon-container">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Educational <br>Courses</h4>
+                        <p>
+                            Courses in graphic designing, 3D animation, and audio-video editing to empower the next generation of creatives.
+                        </p>
+                        <a href="https://forms.gle/sfXg8doKfnwLQ8Hf8" target="_blank" class="get-started"><span>Get Started</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- WhatsApp Floating Icon -->
+    <a href="https://wa.me/+919945250080" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+  
+        <div id="footer"></div>
+
+        <script>
+                document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const mobileLinks = document.getElementById("mobile-navbar-links");
+    
+        hamburger.addEventListener("click", () => {
+            const isVisible = mobileLinks.style.display === "flex";
+            mobileLinks.style.display = isVisible ? "none" : "flex";
+        });
+    });
+        </script>
+    </body>
+</html>

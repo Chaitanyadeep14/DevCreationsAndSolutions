@@ -1,0 +1,801 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* Video Preloader Styles */
+#video-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#video-preloader video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Main content is hidden initially */
+#main-content {
+  display: none;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust to fit large screens */
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease-in-out; /* Faster transition */
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background-size: cover; /* Fill the entire space */
+  background-position: center;
+  transition: opacity 0.5s ease; /* Faster fade effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.carousel-item:nth-child(5) {
+  background-image: url('./images/banner1.svg'); /* Use optimized image formats */
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('./images/banner2.svg');
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('./images/banner3.svg');
+}
+.carousel-item:nth-child(4) {
+  background-image: url('./images/banner4.svg');
+}
+.carousel-item:nth-child(1) {
+  background-image: url('./images/banner55.svg');
+}
+.carousel-item:nth-child(6) {
+  background-image: url('./images/devaraj tshirt.svg');
+}
+
+
+.carousel-content {
+  max-width: 60%; /* Wider text area for large screens */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  border-radius: 10px;
+}
+
+.carousel-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.carousel-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ff8b00;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8b00;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #636466;
+  transform: scale(1.05);
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #636466;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #ff8b00;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+/* Tablet View */
+@media (max-width: 1024px) {
+  .slider {
+    height: 70vh; /* Reduce height for tablets */
+  }
+
+  .carousel-content {
+    max-width: 80%; /* Adjust text width */
+    text-align: center;
+  }
+
+  .carousel-content h1 {
+    font-size: 2rem; /* Smaller text size */
+  }
+
+  .carousel-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .slider {
+    height: 60vh; /* Further reduce height for mobile */
+  }
+
+  .carousel-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .carousel-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .slider {
+    height: 50vh;
+  }
+
+  .carousel-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+
+.carousel-btn--left {
+  left: 20px;
+}
+
+.carousel-btn--right {
+  right: 20px;
+}
+
+/* Dots navigation */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ff8b00;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .carousel-content {
+    max-width: 70%;
+  }
+
+  .carousel-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-content {
+      max-width: 70%;
+  }
+
+  .carousel-content h1 {
+      font-size: 1.8rem;
+  }
+
+  .carousel-content p {
+      font-size: 1rem;
+  }
+
+  .btn {
+      font-size: 0.9rem;
+  }
+}
+
+
+/* marque code */
+.marquee-container {
+  
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, #ff8b00, #636466);
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+  }
+
+  .marquee span {
+    margin: 0 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+
+  .shop-by-category {
+    width: auto; /* Adjust width to fit the layout */
+    max-width: 900px;
+    text-align: left; /* Keep heading and content aligned to the left */
+    margin-left: 20px;
+    margin-right: 50px;
+   
+  }
+  
+  .shop-by-category h2 {
+    font-size: 24px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    text-align: left; /* Ensure the heading aligns left */
+  }
+  
+  .categories {
+    
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Maintain the layout */
+    gap: 40px; /* Increase gap between the cards */
+    justify-content: start; /* Align category items to the left */
+    text-align: center; /* Center-align the text inside items */
+    margin: 0; /* Remove unnecessary margins */
+    margin-left: 80%;
+  }
+  
+  
+  .category-item {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    width: 180px; /* Set a fixed width or increase it */
+  }
+  
+  .category-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .category-item span {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .see-all {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ff8b00;
+    text-decoration: none;
+  }
+  
+  .see-all:hover {
+    text-decoration: underline;
+  }
+  
+
+  /*cards */
+  
+.featured-deals {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-deals h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.deals-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.deal-card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 46.5%;
+  gap: 20px;
+}
+
+/* First deal-card with a gradient background */
+.deal-card:first-child {
+  background: linear-gradient( #C36C77 17%, #C36C77 50%,#5D3439 100%);
+}
+
+/* Second deal-card with a different gradient background */
+.deal-card:last-child {
+  background: linear-gradient(#1f2224 0%, #131313 100%);
+}
+
+.deal-card.reverse {
+  background: #7FBFE1;
+  flex-direction: row-reverse;
+}
+.deal-card.reverse h2{
+  font-size: 1.8em;
+  color: #251B1B;
+  margin-bottom: 10px;
+}
+.deal-card.reverse p {
+  font-size: 1em;
+  color: #251B1B;
+  margin-bottom: 20px;
+}
+.deal-text {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.deal-text h2 {
+  font-size: 1.8em;
+  color: #f6f2f2;
+  margin-bottom: 10px;
+}
+
+.deal-text p {
+  font-size: 1em;
+  color: #FFACB7;
+  margin-bottom: 20px;
+}
+.deal-card.reverse button {
+  background-color: #fff;
+  color: #7FBFE1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deal-button {
+  background-color: #fff;
+
+  color: #FFACB7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deal-button:hover {
+  background-color: #005fa3;
+}
+
+.deal-image {
+  flex: 1;
+  text-align: center;
+  
+}
+
+.deal-image img {
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+
+
+
+/* Explore Section Styling */
+.explore {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Products grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Hidden extra products */
+.extra-products {
+  display: none; /* Hidden initially */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Product item styling */
+.product-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #636466 0%, #C6C8CC 100%);
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #000;
+}
+
+/* Explore More Button */
+.explore-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff8b00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-more-btn:hover {
+  background-color: #636466;
+}
+
+
+/* WhatsApp Floating Icon */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float i {
+  margin-top: 16px;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebd59;
+}
+/* For Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Adjust carousel content width */
+  .carousel-content {
+    max-width: 80%;
+  }
+
+  .carousel-content h1 {
+    font-size: 2rem; /* Slightly smaller font size */
+  }
+
+  .carousel-content p {
+    font-size: 1.1rem; /* Reduce paragraph size */
+  }
+
+  .btn {
+    font-size: 1rem; /* Slightly smaller button text */
+  }
+
+  /* Adjust product grid for 2 columns */
+  .products, .extra-products {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  /* Adjust deals container */
+  .deals-container {
+    flex-direction: column; /* Stack deals vertically */
+  }
+
+  .deal-card {
+    width: 100%; /* Make deal cards full width */
+    margin-bottom: 20px; /* Add spacing between stacked cards */
+  }
+
+  /* Adjust marquee */
+  .marquee span {
+    font-size: 1.2rem; /* Reduce font size */
+  }
+}
+
+/* For Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Adjust slider height */
+  .slider {
+    height: 60vh; /* Reduce slider height */
+  }
+
+  .carousel-content {
+    max-width: 90%; /* Use most of the screen width */
+    text-align: center; /* Center align text */
+  }
+
+  .carousel-content h1 {
+    font-size: 1.5rem; /* Smaller font size for headings */
+  }
+
+  .carousel-content p {
+    font-size: 0.9rem; /* Smaller font size for paragraphs */
+  }
+
+  .btn {
+    font-size: 0.8rem; /* Smaller button text */
+    padding: 8px 16px; /* Reduce button padding */
+  }
+
+  /* Stack buttons vertically */
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem; /* Smaller icons */
+  }
+
+  /* Adjust product grid for 1 column */
+  .products, .extra-products {
+    grid-template-columns: 1fr; /* Single column */
+  }
+
+  /* Featured deals */
+  .deals-container {
+    flex-direction: column; /* Stack vertically */
+  }
+
+  .deal-card {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px; /* Add spacing */
+  }
+
+  .deal-text h2 {
+    font-size: 1.5rem; /* Adjust headline size */
+  }
+
+  .deal-text p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  /* Adjust marquee text */
+  .marquee span {
+    font-size: 1rem; /* Smaller text for marquee */
+  }
+
+  /* Adjust category items */
+  .categories {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for categories */
+    gap: 15px; /* Reduce gap */
+  }
+
+  .category-item {
+    width: 100%; /* Full width for category items */
+  }
+
+  .category-item img {
+    width: 50px; /* Slightly larger images */
+    height: 50px;
+  }
+
+  .category-item span {
+    font-size: 0.8rem; /* Smaller text */
+  }
+
+  /* Explore button */
+  .explore-more-btn {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 8px 16px; /* Reduce padding */
+  }
+}
+
+/* For Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Adjust slider height */
+  .slider {
+    height: 50vh; /* Further reduce slider height */
+  }
+
+  .carousel-content h1 {
+    font-size: 1.2rem; /* Smaller headings */
+  }
+
+  .carousel-content p {
+    font-size: 0.8rem; /* Smaller paragraphs */
+  }
+
+  /* Buttons */
+  .btn {
+    font-size: 0.7rem; /* Small button text */
+    padding: 6px 12px; /* Reduce button padding */
+  }
+
+  /* Deal cards */
+  .deal-card {
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .deal-image img {
+    width: 80%; /* Reduce image size */
+    margin: 0 auto; /* Center image */
+  }
+
+  .deal-text h2 {
+    font-size: 1.2rem; /* Smaller text size */
+  }
+
+  .deal-text p {
+    font-size: 0.8rem; /* Smaller paragraph text */
+  }
+
+  /* Marquee */
+  .marquee span {
+    font-size: 0.8rem; /* Smaller text */
+    margin: 0 20px; /* Reduce spacing */
+  }
+
+  /* Product items */
+  .product-item h3 {
+    font-size: 1rem; /* Smaller headlines */
+  }
+
+  .product-item img {
+    max-width: 80%; /* Reduce image size */
+  }
+
+  .product-item span {
+    font-size: 0.7rem; /* Smaller text */
+  }
+
+  /* Explore button */
+  .explore-more-btn {
+    font-size: 0.8rem; /* Smaller button */
+  }
+}

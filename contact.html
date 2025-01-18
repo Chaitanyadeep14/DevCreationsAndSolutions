@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="product.css">
+
+    <script src="script.js"></script>
+    <script src="productScript.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+   <!-- Desktop Navbar -->
+ <nav class="navbar desktop-navbar">
+    <div class="navbar-logo">
+        <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="navbar-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-link dropdown">
+          <span id="productsButton">Products</span>
+          <div class="dropdown-menu" id="productDropdownMenu">
+            <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+            <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+            <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+            <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+            <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+            <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+            <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+            <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+            <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+            <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+            <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+            <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+          </div>
+      </div>
+             
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+    <div class="navbar-icons">
+        <div class="icon">
+            <img src="./images/wishlist-icon.png" alt="Wishlist" title="Wishlist">
+        </div>
+        <div class="icon">
+            <img src="./images/cart-icon.png" alt="Cart" title="Cart">
+        </div>
+        <div class="icon">
+            <img src="./images/user-icon.png" alt="User Profile" title="Profile">
+        </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Mobile Navbar -->
+  <nav class="mobile-navbar">
+  <div class="mobile-navbar-container">
+    <div class="mobile-navbar-logo">
+        <img src="./images/main-logo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="mobile-navbar-hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+  </div>
+  <div class="mobile-navbar-links" id="mobile-navbar-links">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <div class="mobile-nav-link dropdown">
+        <span>Products</span>
+        <div class="mobile-dropdown-menu">
+            <a href="product.html?product=t-shirts" class="dropdown-item">T-Shirts</a>
+            <a href="product.html?product=banners" class="dropdown-item">Banners</a>
+            <a href="product.html?product=badges" class="dropdown-item">Badges</a>
+            <a href="product.html?product=certificates" class="dropdown-item">Certificates</a>
+            <a href="product.html?product=letter-heads" class="dropdown-item">Letterheads</a>
+            <a href="product.html?product=visiting-cards" class="dropdown-item">Visiting Cards</a>
+            <a href="product.html?product=posters" class="dropdown-item">Posters</a>
+            <a href="product.html?product=brochures" class="dropdown-item">Brochures</a>
+            <a href="product.html?product=stickers" class="dropdown-item">Stickers</a>
+            <a href="product.html?product=danglers" class="dropdown-item">Danglers</a>
+            <a href="product.html?product=id-cards" class="dropdown-item">ID Cards</a>
+            <a href="product.html?product=calendars" class="dropdown-item">Calendars</a>
+            
+  
+        </div>
+    </div>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+  </div>
+  </nav>
+
+    <section class="contact-page">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">We'd love to hear from you. Please fill out the form below or find us at our office.</p>
+        <div class="contact-container">
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Map Section -->
+            <div class="contact-map">
+                <h3>Find Us Here</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.812025664291!2d77.7453041!3d13.047633999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0f6a591b8b0d%3A0xa50642f22dcdf97f!2sDev%20creations%20%26%20solutions!5e0!3m2!1sen!2sin!4v1732507034864!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Icon -->
+     <a href="https://wa.me/+919945250080" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+  
+    <div id="footer"></div>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        const mobileLinks = document.getElementById("mobile-navbar-links");
+    
+        hamburger.addEventListener("click", () => {
+            const isVisible = mobileLinks.style.display === "flex";
+            mobileLinks.style.display = isVisible ? "none" : "flex";
+        });
+    });</script>
+</body>
+</html>
